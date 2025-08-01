@@ -1,6 +1,0 @@
-#!/bin/bash
-docker rm -f bookmvp || true
-docker rmi sapabook || true
-docker build -t sapabook ./app
-docker run --env-file app/.env --name bookmvp -d sapabook
-docker logs -f bookmvp

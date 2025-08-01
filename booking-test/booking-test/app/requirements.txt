@@ -1,4 +1,0 @@
-aiogram
-python-dotenv
-pytz
-psycopg2-binary

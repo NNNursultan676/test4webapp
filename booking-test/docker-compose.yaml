@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  sapaplus:
+    container_name: "${CONTAINER_NAME}"
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - ./app/.env
+    working_dir: /app
+    command: ["python", "bot/bot.py"]
+    networks:
+      - postgres
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
+networks:
+  postgres:
+    driver: bridge

@@ -1,9 +1,0 @@
-[
-  {
-    "id": 1,
-    "name": "Room 1",
-    "capacity": 8,
-    "location": "6 этаж",
-    "features": ["TV", "WiFi", "Whiteboard", "Video Conferencing"]
-  }
-]
